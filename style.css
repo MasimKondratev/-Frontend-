@@ -1,0 +1,73 @@
+body{
+background-color: #343d4b;
+}
+.Tuesday{
+    width: 176px;
+height: 38px;
+flex-shrink: 0;
+    color: #FFF;
+
+font-family:'Times New Roman';
+font-size: 37px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.Дата{
+    width: 154px;
+height: 36px;
+flex-shrink: 0;
+    color: #FFF;
+
+font-family: 'Times New Roman';
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.Иконкагеолокации{
+    color: #FFF;
+
+font-family: 'Times New Roman';
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.Позиция{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.Солнышко{
+    position: absolute;
+    top: 375px;
+    left: 32px;
+}
+.Температура{
+    color: #FFF;
+
+font-family: 'Times New Roman';
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    position: absolute;
+    top: 479px;
+    left: 32px;
+}
+.Солнечно{
+    width: 144px;
+height: 29px;
+flex-shrink: 0;
+color: #FFF;
+font-family: 'Times New Roman';
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+position: absolute;
+    top: 553px;
+    left: 32px;
+}
+
