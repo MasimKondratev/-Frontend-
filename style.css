@@ -1,45 +1,45 @@
 body{
 background-color: #343d4b;
 }
-.Подкартинкой{
-    width: 944px;
-height: 623px;
-flex-shrink: 0;
-border-radius: 25px;
-background: #222831;
-position: relative;
-    top: 20px;
-    left: 32px;
+.Parents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
-.Заднийфон{
-    position: absolute;
-    top: 5px;
+.Позиция{
+    align-items: center;
+    justify-content: center;
+    margin-top: -600px;
 }
 .Tuesday{
     width: 176px;
 height: 38px;
 flex-shrink: 0;
     color: #FFF;
+    padding-left: 32px;
+    padding-top: 0px;
 
 font-family:'Montserrat', sans-serif;
 font-size: 37px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+
 }
 .Дата{
     width: 154px;
 height: 36px;
 flex-shrink: 0;
     color: #FFF;
-    position: relative;
-    top: 16px;
 
 font-family:'Montserrat', sans-serif;
 font-size: 22px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+padding-left: 32px;
+padding-top: 16px;
 }
 .Иконкагеолокации{
     color: #FFF;
@@ -49,19 +49,13 @@ font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-position: relative;
-    top: 25px;
-    left:2px;
+padding-left: 32px;
+padding-top: 10px;
 }
-.Позиция{
-    position: absolute;
-    top: 50px;
-    left: 40px;
-}
+
 .Солнышко{
-    position: relative;
-    top: 200px;
-    left: 32px;
+    padding-left: 32px;
+padding-top: 200px;
 }
 .Температура{
     color: #FFF;
@@ -71,9 +65,8 @@ font-size: 50px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-    position: relative;
-    top: 210px;
-    left: 32px;
+padding-left: 32px;
+padding-top: 9px;
 }
 .Солнечно{
     width: 144px;
@@ -85,332 +78,181 @@ font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-position: relative;
-    top: 223px;
-    left: 32px;
+padding-left: 32px;
+padding-top: 13px;
 }
-.Precepitation{
-    width: 275px;
-    height: 35px;
-    flex-shrink: 0;
-    color: #FFF;
-font-family: 'Montserrat', sans-serif;
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-    top: -264px;
-    left: 479px;
-}
-.Осадки{
-    width: 68px;
-height: 22px;
-flex-shrink: 0;
-    color: #FFF;
 
-text-align: right;
-font-family: 'Montserrat', sans-serif;
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-position: relative;
-    top: -301px;
-    left: 826px;
-}
-.HUMIDITY{
-    width: 275px;
-height: 35px;
+.SecondRectangle{
+    
 flex-shrink: 0;
-color: #FFF;
-
-font-family: 'Montserrat', sans-serif;
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-    top: -248px;
-    left: 479px;
+border-radius: 25px;
+background: #222831;
 }
-.Влажность{
-    width: 68px;
-height: 22px;
-flex-shrink: 0;
-color: #FFF;
-
-text-align: right;
-font-family: 'Montserrat', sans-serif;
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-position: relative;
-    top: -282px;
-    left: 826px;
+.Показателипогоды{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
 }
-.WIND{
-    width: 275px;
-height: 35px;
-flex-shrink: 0;
-color: #FFF;
-
-font-family: 'Montserrat', sans-serif;
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-    top: -232px;
-    left: 479px;
+.SecondRectangle{
+    position: relative;
+    background-color: #222831;
+    border-radius: 0 25px 25px 0;
+    padding: 55px;
+    top: 30px;
 }
-.Ветер{
-    width: 153px;
-height: 22px;
-flex-shrink: 0;
-color: #FFF;
-
-text-align: right;
-font-family: 'Montserrat', sans-serif;
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-position: relative;
-    top: -270px;
-    left: 741px;
+.информацияпопогоде{
+    display: flex;
+    
+    font-size: 28px;
+    justify-content: space-between; 
+    line-height: 1px;
 }
-.Иконка{
-    width: 104px;
-    height: 168px;
-    flex-shrink: 0;
+.type{
+    color: #fff;
+    font-weight: 700;
+}
+.measure{
+    color: #fff;
+    font-weight: 500;
+}
+.Карточки{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: center;
+}
+
+
+.Карточка{
     border-radius: 10px;
-background: #FFF;
-
-box-shadow: 1px 2px 4px 0px #222831; 
-position: relative;
-    top: -153px;
-    left: 481px;
+    background: #FFF;
+    box-shadow: 1px 2px 4px 0px #222831;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 15px;
 }
-.Солнечноиконка{
-    width: 54px;
-height: 54px;
-flex-shrink: 0;
-position: relative;
-    top: -300px;
-    left: 505px;
+
+.Перваяиконка{
+    display: flex;
+    justify-content: center;
 }
 .Tue{
     color: #000;
-
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-position: relative;
-    top: -285px;
-    left: 325px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
 }
+
 .Тридцатьградусов{
     color: #000;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0; 
+}
+.Остальныекарточки{
+    border-radius: 10px;
+    background: #272E37;
+    box-shadow: 1px 2px 4px 0px #222831;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 15px;
+}
 
-text-align: right;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-    top: -270px;
-    left: 145px;
+.Втораяиконка{
+    display: flex;
+    justify-content: center;
 }
-.Иконкаа{
-    width: 103px;
-height: 165px;
-flex-shrink: 0;
-border-radius: 10px;
-background: #272E37;
 
-box-shadow: 1px 2px 4px 0px #222831;
-position: relative;
-    top: -425px;
-    left: 585px;
-}
-.Облачноиконка{
-    width: 54px;
-height: 54px;
-flex-shrink: 0;
-position: relative;
-    top: -580px;
-    left: 611px;
-}
 .Wed{
-    width: 58px;
-height: 24px;
-flex-shrink: 0;
-color: #FFF;
-
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-position: relative;
-    top: -555px;
-    left: 607px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    flex-shrink: 0;
 }
 .Двадцатьдваградуса{
-    width: 54.471px;
-height: 23.571px;
-flex-shrink: 0;
-color: #FFF;
-
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-    top: -538px;
-    left: 608.77px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
 }
-.Иконкааа{
-    width: 103px;
-height: 165px;
-flex-shrink: 0;
-border-radius: 10px;
-background: #272E37;
-
-box-shadow: 1px 2px 4px 0px #222831;
-position: relative;
-    top: -692px;
-    left: 689px;
-}
-.Дождливоиконка{
-    width: 54px;
-height: 54px;
-flex-shrink: 0;
-position:relative;
-    top: -838px;
-    left: 713px;
+.Третьяиконка{
+    
+    display: flex;
+    justify-content: center;
 }
 .Thu{
-    width: 59px;
-height: 24px;
-flex-shrink: 0;
-color: #FFF;
-
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-position: relative;
-    top: -822px;
-    left: 711px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    flex-shrink: 0;
 }
 .Шестьградусов{
-    width: 78px;
-height: 23px;
-flex-shrink: 0;
-color: #FFF;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
 
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-    top: -805px;
-    left: 701px;
+.Четвертаяиконка{
+    display: flex;
+    justify-content: center;
 }
-.Иконкаааа{
-    width: 103px;
-height: 165px;
-flex-shrink: 0;
-border-radius: 10px;
-background: #272E37;
 
-box-shadow: 1px 2px 4px 0px #222831;
-position: relative;
-    top: -958px;
-    left: 793px;
-}
-.Солнечноиконкадва{
-    width: 54.471px;
-height: 54.018px;
-flex-shrink: 0;
-position: relative;
-    top: -1110px;
-    left: 816.77px;
-}
 .Fry{
-    width: 54px;
-height: 24px;
-flex-shrink: 0;
-color: #FFF;
-
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-position: relative;
-    top: -1089px;
-    left: 817px;
+    
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;   
 }
 .Двадцатьшестьградусов{
-    width: 54.471px;
-height: 23.571px;
-flex-shrink: 0;
-color: #FFF;
-
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-position: relative;
-    top: -1072px;
-    left: 816.77px;
+    
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;   
 }
-.Location{
+.Синяяиконка{
+    margin-top: 72px;
     width: 415px;
-height: 53px;
-flex-shrink: 0;
-border-radius: 10px;
-background: linear-gradient(91deg, rgba(144, 217, 224, 0.90) 0.2%, rgba(84, 96, 230, 0.90) 100%);
-position: relative;
-    top: -1030px;
-    left: 479px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(91deg, rgba(144, 217, 224, 0.90) 0.2%, rgba(84, 96, 230, 0.90) 100%);
 }
-.Geolocation{
-    width: 33px;
-height: 33px;
-flex-shrink: 0;
-position: relative;
-    top: -1075px;
-    left: 578px;
+
+.Нажать{
+    display: flex;
+    justify-content: center;
+}
+.Геолокация{
+    margin-top: 10px;
+    margin-right: 8px;
 }
 .ChangeLocation{
-    color: #FFF;
-
-text-align: right;
-font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-position: relative;
-    top: -1105px;
-    left: 380px;
-}
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 14px;
+} 
