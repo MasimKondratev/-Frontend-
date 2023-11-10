@@ -1,16 +1,32 @@
 body{
 background-color: #343d4b;
+font-family:'Montserrat', sans-serif;
 }
 .Parents{
+
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
-.Позиция{
-    align-items: center;
-    justify-content: center;
-    margin-top: -600px;
+.Background {
+    position: relative;
+    min-width: 450px;
+    max-width: 600px;
+    padding: 56px 22px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Position {
+    transform: translateZ(0);
 }
 .Tuesday{
     width: 176px;
@@ -20,20 +36,18 @@ flex-shrink: 0;
     padding-left: 32px;
     padding-top: 0px;
 
-font-family:'Montserrat', sans-serif;
 font-size: 37px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 
 }
-.Дата{
+.Date{
     width: 154px;
 height: 36px;
 flex-shrink: 0;
     color: #FFF;
 
-font-family:'Montserrat', sans-serif;
 font-size: 22px;
 font-style: normal;
 font-weight: 500;
@@ -41,10 +55,9 @@ line-height: normal;
 padding-left: 32px;
 padding-top: 16px;
 }
-.Иконкагеолокации{
+.Geolocationicon{
     color: #FFF;
 
-font-family:'Montserrat', sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 600;
@@ -53,14 +66,13 @@ padding-left: 32px;
 padding-top: 10px;
 }
 
-.Солнышко{
+.Sun{
     padding-left: 32px;
 padding-top: 200px;
 }
-.Температура{
+.Temperature{
     color: #FFF;
 
-font-family:'Montserrat', sans-serif;
 font-size: 50px;
 font-style: normal;
 font-weight: 700;
@@ -68,12 +80,11 @@ line-height: normal;
 padding-left: 32px;
 padding-top: 9px;
 }
-.Солнечно{
+.Sunny{
     width: 144px;
 height: 29px;
 flex-shrink: 0;
 color: #FFF;
-font-family: 'Montserrat', sans-serif;
 font-size: 30px;
 font-style: normal;
 font-weight: 700;
@@ -85,22 +96,18 @@ padding-top: 13px;
 .SecondRectangle{
     
 flex-shrink: 0;
-border-radius: 25px;
-background: #222831;
+position: relative;
+    background-color: #222831;
+    border-radius: 0 25px 25px 0;
+    padding: 55px;
 }
-.Показателипогоды{
+.Weatherindicators{
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
 }
-.SecondRectangle{
-    position: relative;
-    background-color: #222831;
-    border-radius: 0 25px 25px 0;
-    padding: 55px;
-    top: 30px;
-}
-.информацияпопогоде{
+
+.WeatherInformation{
     display: flex;
     
     font-size: 28px;
@@ -115,7 +122,7 @@ background: #222831;
     color: #fff;
     font-weight: 500;
 }
-.Карточки{
+.Cards{
     display: flex;
     flex-direction: row;
     color: #fff;
@@ -123,7 +130,7 @@ background: #222831;
 }
 
 
-.Карточка{
+.Card{
     border-radius: 10px;
     background: #FFF;
     box-shadow: 1px 2px 4px 0px #222831;
@@ -135,7 +142,7 @@ background: #222831;
     gap: 15px;
 }
 
-.Перваяиконка{
+.FirsIcon{
     display: flex;
     justify-content: center;
 }
@@ -146,7 +153,7 @@ background: #222831;
     font-weight: 400;
 }
 
-.Тридцатьградусов{
+.Thirtydegrees{
     color: #000;
     text-align: right;
     font-size: 20px;
@@ -155,7 +162,7 @@ background: #222831;
     justify-content: center;
     flex-shrink: 0; 
 }
-.Остальныекарточки{
+.Othercards{
     border-radius: 10px;
     background: #272E37;
     box-shadow: 1px 2px 4px 0px #222831;
@@ -167,7 +174,7 @@ background: #222831;
     gap: 15px;
 }
 
-.Втораяиконка{
+.Iconnumbertwo{
     display: flex;
     justify-content: center;
 }
@@ -180,7 +187,7 @@ background: #222831;
     font-weight: 400;
     flex-shrink: 0;
 }
-.Двадцатьдваградуса{
+.Twentytwodegrees{
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -188,7 +195,7 @@ background: #222831;
     font-weight: 700;
     flex-shrink: 0;
 }
-.Третьяиконка{
+.Iconnumberthree{
     
     display: flex;
     justify-content: center;
@@ -201,7 +208,7 @@ background: #222831;
     font-weight: 400;
     flex-shrink: 0;
 }
-.Шестьградусов{
+.Sixdegrees{
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -210,7 +217,7 @@ background: #222831;
     flex-shrink: 0;
 }
 
-.Четвертаяиконка{
+.Iconnumberfour{
     display: flex;
     justify-content: center;
 }
@@ -224,7 +231,7 @@ background: #222831;
     font-size: 20px;
     font-weight: 400;   
 }
-.Двадцатьшестьградусов{
+.Twentysixdegrees{
     
     display: flex;
     justify-content: center;
@@ -233,7 +240,7 @@ background: #222831;
     font-size: 20px;
     font-weight: 700;   
 }
-.Синяяиконка{
+.BlueIcon{
     margin-top: 72px;
     width: 415px;
     height: 53px;
@@ -242,11 +249,11 @@ background: #222831;
     background: linear-gradient(91deg, rgba(144, 217, 224, 0.90) 0.2%, rgba(84, 96, 230, 0.90) 100%);
 }
 
-.Нажать{
+.Tap{
     display: flex;
     justify-content: center;
 }
-.Геолокация{
+.Geolocation{
     margin-top: 10px;
     margin-right: 8px;
 }
