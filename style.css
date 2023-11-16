@@ -2,22 +2,37 @@ body{
 background-color: #343d4b;
 font-family:'Montserrat', sans-serif;
 }
-.Parents{
 
+.Container{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
-.Background {
-    position: relative;
-    min-width: 450px;
-    max-width: 600px;
-    padding: 56px 22px;
-    border-radius: 25px;
-    overflow: hidden;
+
+@media (max-width: 700px) {
+    .Container {
+     display: block;
+    }
 }
-.bg-image {
+
+ .Container__left-rectangle {
+        position: relative;
+        width: min(50%, 450px);
+        max-width: 600px;
+        padding: 56px 22px;
+        border-radius: 25px;
+        overflow: hidden;
+      font-size: 25pt;
+}
+
+@media (max-width: 700px) {
+    .Container__left-rectangle {
+        width: 100%;
+    }
+}
+
+.left-rectangle__image {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,12 +40,10 @@ font-family:'Montserrat', sans-serif;
     height: 100%;
     object-fit: cover;
 }
-.Position {
+.left-rectangle__inform {
     transform: translateZ(0);
 }
-.Tuesday{
-    width: 176px;
-height: 38px;
+.inform___header{
 flex-shrink: 0;
     color: #FFF;
     padding-left: 32px;
@@ -42,12 +55,10 @@ font-weight: 700;
 line-height: normal;
 
 }
-.Date{
-    width: 154px;
-height: 36px;
+.inform__subtitle1{
+    
 flex-shrink: 0;
     color: #FFF;
-
 font-size: 22px;
 font-style: normal;
 font-weight: 500;
@@ -55,7 +66,7 @@ line-height: normal;
 padding-left: 32px;
 padding-top: 16px;
 }
-.Geolocationicon{
+.subtitle2__icon-text{
     color: #FFF;
 
 font-size: 20px;
@@ -66,13 +77,12 @@ padding-left: 32px;
 padding-top: 10px;
 }
 
-.Sun{
+.subtitle3__icon-sun{
     padding-left: 32px;
 padding-top: 200px;
 }
-.Temperature{
+.subtitle4__temp{
     color: #FFF;
-
 font-size: 50px;
 font-style: normal;
 font-weight: 700;
@@ -80,9 +90,8 @@ line-height: normal;
 padding-left: 32px;
 padding-top: 9px;
 }
-.Sunny{
-    width: 144px;
-height: 29px;
+.subtitle5__footer{
+    
 flex-shrink: 0;
 color: #FFF;
 font-size: 30px;
@@ -93,76 +102,50 @@ padding-left: 32px;
 padding-top: 13px;
 }
 
-.SecondRectangle{
+.Container__right-rectangle{
     
 flex-shrink: 0;
 position: relative;
     background-color: #222831;
     border-radius: 0 25px 25px 0;
     padding: 55px;
+    width: min(50%, 450px);
 }
-.Weatherindicators{
+@media (max-width: 700px) {
+    .Container__right-rectangle {
+        width: 85%;
+    }
+}
+.right-rectangle__list{
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
 }
 
-.WeatherInformation{
+.list__element{
     display: flex;
     
     font-size: 28px;
     justify-content: space-between; 
     line-height: 1px;
 }
-.type{
+.element__type{
     color: #fff;
     font-weight: 700;
 }
-.measure{
+.element__measure{
     color: #fff;
     font-weight: 500;
 }
-.Cards{
+
+.right-rectangle__cards{
     display: flex;
     flex-direction: row;
     color: #fff;
     justify-content: center;
 }
 
-
-.Card{
-    border-radius: 10px;
-    background: #FFF;
-    box-shadow: 1px 2px 4px 0px #222831;
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 25px;
-    gap: 15px;
-}
-
-.FirsIcon{
-    display: flex;
-    justify-content: center;
-}
-.Tue{
-    color: #000;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.Thirtydegrees{
-    color: #000;
-    text-align: right;
-    font-size: 20px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    flex-shrink: 0; 
-}
-.Othercards{
+.cards__card{
     border-radius: 10px;
     background: #272E37;
     box-shadow: 1px 2px 4px 0px #222831;
@@ -173,13 +156,42 @@ position: relative;
     padding: 25px;
     gap: 15px;
 }
+@media(max-width:700px){
+    .cards__card{
+        padding:4%;
+    }
+}
+.card--active{
+    background-color: #FFF;
+    color: #000;
+}
+.card__first-icon{
+    display: flex;
+    justify-content: center;
+}
+.first-icon__header{
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
 
-.Iconnumbertwo{
+.first-icon__subtitle{
+    color: #000;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0; 
+}
+
+.card__second-icon{
     display: flex;
     justify-content: center;
 }
 
-.Wed{
+.second-icon__header{
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -187,7 +199,7 @@ position: relative;
     font-weight: 400;
     flex-shrink: 0;
 }
-.Twentytwodegrees{
+.second-icon__subtitle{
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -195,12 +207,12 @@ position: relative;
     font-weight: 700;
     flex-shrink: 0;
 }
-.Iconnumberthree{
+.card__three-icon{
     
     display: flex;
     justify-content: center;
 }
-.Thu{
+.three-icon__header{
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -208,7 +220,7 @@ position: relative;
     font-weight: 400;
     flex-shrink: 0;
 }
-.Sixdegrees{
+.three-icon__subtitle{
     display: flex;
     justify-content: center;
     color: #FFF;
@@ -217,12 +229,12 @@ position: relative;
     flex-shrink: 0;
 }
 
-.Iconnumberfour{
+.card__four-icon{
     display: flex;
     justify-content: center;
 }
 
-.Fry{
+.four-icon__header{
     
     display: flex;
     justify-content: center;
@@ -231,7 +243,7 @@ position: relative;
     font-size: 20px;
     font-weight: 400;   
 }
-.Twentysixdegrees{
+.four-icon__subtitle{
     
     display: flex;
     justify-content: center;
@@ -240,26 +252,24 @@ position: relative;
     font-size: 20px;
     font-weight: 700;   
 }
-.BlueIcon{
+.right-rectangle__footer{
     margin-top: 72px;
-    width: 415px;
-    height: 53px;
     flex-shrink: 0;
     border-radius: 10px;
     background: linear-gradient(91deg, rgba(144, 217, 224, 0.90) 0.2%, rgba(84, 96, 230, 0.90) 100%);
 }
 
-.Tap{
+.footer__tap{
     display: flex;
     justify-content: center;
 }
-.Geolocation{
+.tap__geo{
     margin-top: 10px;
     margin-right: 8px;
 }
-.ChangeLocation{
+.tap__ChangeLoc{
     color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin-top: 14px;
-} 
+}
